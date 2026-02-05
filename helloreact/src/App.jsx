@@ -1,7 +1,7 @@
 import './App.css';
 import Cabecalho from './componentes/Cabecalho-header';
 import { useState } from 'react';
-import Imesada from './componentes/iMesada';
+import Imesada from './componentes/Imesada.jsx';
 
 
 function App() {
