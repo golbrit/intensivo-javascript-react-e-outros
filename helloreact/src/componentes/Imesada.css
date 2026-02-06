@@ -1,25 +1,30 @@
-.tudao{
-    padding: 0;
-    margin: 0;
-    background-image: var();
-    font-style: italic;
-    text-align: center;
+.container-imesada{
+    background-color: darkturquoise;
+    min-height: calc(100vh - 70px);
 
-}
-.tela{
-    font-size: 45px;
-    box-sizing: border-box;
-}
-.botao{
-    border-radius: 3px;
-    border-color: aliceblue;
-
-}
-
-.btdCredito{
-    background-color: rgb(68, 121, 18);
     
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
 }
-.btdDebito{
-    background-color: rgb(167, 24, 24);
+.form-imesada{
+    background-color: bisque;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #000000cb;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+
+}
+.imagem_caverna{
+    width: 100px;
+
 }

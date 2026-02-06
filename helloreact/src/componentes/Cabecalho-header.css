@@ -1,8 +1,15 @@
 header{
-    background-color: rgb(133, 204, 85);
-
+    background-color: rgb(85, 186, 204);
+    
 }
 
 .paragrafo-do-header{
     background-color: aqua
+}
+.lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ 
 }

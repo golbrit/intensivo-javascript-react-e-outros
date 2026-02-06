@@ -1,0 +1,25 @@
+.tudao{
+    padding: 0;
+    margin: 0;
+    background-image: var();
+    font-style: italic;
+    text-align: center;
+
+}
+.tela{
+    font-size: 45px;
+    box-sizing: border-box;
+}
+.botao{
+    border-radius: 3px;
+    border-color: aliceblue;
+
+}
+
+.btdCredito{
+    background-color: rgb(68, 121, 18);
+    
+}
+.btdDebito{
+    background-color: rgb(167, 24, 24);
+}
