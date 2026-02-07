@@ -2,10 +2,10 @@ import React from 'react'
 
 function Produto(props) {
     return (
-        <div >
-            <p>Porduto: {props.p.nome}</p>
-            <p>Preco: {props.p.preco}</p>
-            <p>Descricao: {props.p.descricao}</p>
+        <div style={{backgroundColor:'#ffaaaa', color: '#fff'}}>
+            <p>Produto: {props.p.nome}</p>
+            <p>Preço: {props.p.preco}</p>
+            <p>Descrição: {props.p.descricao}</p>
         </div>
     )
 }

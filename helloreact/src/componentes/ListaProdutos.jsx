@@ -1,34 +1,41 @@
-import React from 'react'
-import Produto from './produto';
-import './ListaProdutos';
+import React, { useState } from 'react'
+import Produto from './Produto';
+import './ListaProdutos.css'
 
 function ListaProdutos() {
-        
-    const produtos = [
-        {id: Date.now(), nome: "Garrafa", preco: 50, descricao: "garrafa"},
-        {id: Date.now()+1, nome: "pedar", preco: 50, descricao: "pedar"}
-    ]
-    function cadastrarPorduto(){
+    const [produtos, setProdutos] = useState([
+        {id: Date.now(), nome: "Garrafa", preco: 22, descricao: "Garrafa de água 1,2l"},
+        {id: Date.now()+1, nome: "Teclado", preco: 350, descricao: "Teclado topzera"},
+        {id: Date.now()+2, nome: "Teclado", preco: 350, descricao: "Teclado topzera"},
+    ])
+
+    function cadastrarProduto(){
         const produto = {
             id: Date.now(),
-            nome: prompt("Dígite o nome do produto: "),
-            preco: prompt(Number("Preço: ")),
+            nome: prompt("Digite o nome do produto:"),
+            preco: prompt("Preço:"),
             descricao: prompt("Descrição: ")
         }
+        
+        setProdutos([...produtos, produto])
+    
     }
 
+
+
     return (
-        <div className ={"lista"}>
+        <div className={"lista"}>
             <p>Lista de produtos</p>
-            <button onClick = {cadastrarPorduto}>Cadastrar Porduto</button>
-            <div className="renderCardis">
-                {produtos.map((prod)=> (
-                        <Produto p = {prod} key= {prod.id}/>
-                    ))}
-                {/* <Produto p = {produtos[0]}/> */}
+            <button onClick={cadastrarProduto}>
+                <img src="./icons/subway--add.svg" alt=""/>
+            </button>
+            <div className={"render-cards"}>
+
+                {produtos.map( (prod) => (
+                    <Produto p={prod} key={prod.id}/>
+                ) )}
 
             </div>
-
         </div>
     )
 }

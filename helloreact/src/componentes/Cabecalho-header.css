@@ -1,15 +1,9 @@
-header{
-    background-color: rgb(85, 186, 204);
-    
+
+.container-cabecalho{
+    background-color: aqua;
+    height: 70px;
 }
 
 .paragrafo-do-header{
-    background-color: aqua
-}
-.lista{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
- 
+    background-color: blueviolet;
 }
